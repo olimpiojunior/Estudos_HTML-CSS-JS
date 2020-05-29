@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador Olímpico</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style-pagina.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">Página Inicial</h1>
+        <nav class="menu-principal">
+            <button class="menu-principal__btn">Abrir/Fechar Menu</button>
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item menu-principal__item--atual" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a></li>
+                <li><a class="menu-principal__item" href="portifolio.html">Portifólio</a></li>
+                <li><a class="menu-principal__item" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main><!--Neste caso usamos um href diferente, onde iremos gerar um link para a mesma pagina-->
+        <header>
+            <h2>TEXTO GRANDE VEM AQUI</h2>
+            <p>Texto menorzinho aqui</p>
+            <a href="#servicos">Role para ver mais</a>
+        </header><!--Dentro de section esta o id para a referencia #serviços-->
+        <section id="servicos"><!--Início da seção serviços-->
+            <h2>O que fazemos</h2>
+            <section>
+                <img src="img/icone-desenvolvimento-web.png" alt="icone desenvolvimento web">
+                <h3>Desenvolvimento Web</h3>
+                <p>Aqui vem um texto que fica em baixo do titulo desenvolvimento Web e que explica alguma coisa.</p>
+            </section>
+            <section>
+                <img src="img/icone-carrinho-compras.png" alt="icone e-comerce">
+                <h3>E-Comerce</h3>
+                <p>Aqui vem um textinho sobre e-comerce explicando sobre o assunto e eu também preciso aprender o que é</p>
+            </section>
+            <section>
+                <img src="img/icone-cafe.png" alt="icone cafe">
+                <h3>Café</h3>
+                <p>Aqui vem a parte mais intrigante, o que será que tem a ver um subtitulo chamado café?</p>
+            </section>
+        </section><!--Fim da serção serviços-->
+        <section><!--Início seção depoimentos-->
+            <h2>O que falam de nós</h2>
+            <section>
+                <img src="img/depoimentos/pessoa-1.jpg" alt="foto de pessoa alternativa">
+                <p>Paragrafo qualquer de depoimento de pessoas que escreve texto na internet. Em tempo de quarentena surgem<br>
+                muitos filósofos de internet querendo ser Platão</p>
+            </section>
+        </section><!--Fim seção depoimentos-->
+
+        </header>
+    </main>
+    <footer class="rodape"><!--Inicio do rodapé-->
+        <div class="rodape__linha-1">
+            <div class="rodape__coluna">
+                <a href="index.html" class="logo logo--branco">Design Olímpico</a>
+                <p>Texto explicativo sobre assuntos relacionados a empresa em questão que tem com nome 'olímpico'. Coisa que não faz sentido nenhum mas que está começando a assustar pelo fato de ter grande potencial para se tornar realidade</p>
+            </div>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Social</h2>
+                <ul class="rodape__lista-links"><!--Aqui estão os links para redes sociais-->
+                    <li><a class="rodape__lista-links__item" href="https://twitter.com/olimpiojr26" target="_blank">Twitter</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://www.facebook.com/junior.barbosa.9235" target="_blank">Facebook</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://github.com/olimpiojunior" target="_blank">Github</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://intagram.com/olimpiojr26" target="_blank">Instagram</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://linkedin.com/in/olimpiojunior" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Links</h2>
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
+                    <li><a class="rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
+                    <li><a class="rodape__lista-links__item" href="portifolio.html">Portifólio</a></li>
+                    <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
+                </ul>
+                <p></p>
+            </div>
+        </div>
+        <div class="rodape__linha-2">
+            © 2020 - Todos os direitos reservados - Olímpio Júnior 
+        </div>
+    </footer><!--Fim do rodapé-->
+</body>
+</html>

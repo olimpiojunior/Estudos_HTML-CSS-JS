@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programador Olímpico - Contato</title>
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style-pagina.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" class="logo">Contato</a>
+        <nav class="menu-principal">
+            <button class="menu-principal__btn">Abrir/Fechar Menu</button>
+            <ul class="menu-principal__lista">
+                <li><a class="menu-principal__item" href="index.html">Home</a></li>
+                <li><a class="menu-principal__item" href="sobre.html">Sobre nós</a></li>
+                <li><a class="menu-principal__item" href="portifolio.html">Portifólio</a></li>
+                <li><a class="menu-principal__item menu-principal__item--atual" href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <header>
+            <h1>Contato</h1>
+        </header>
+        <section>
+            <p>
+                Aqui tem um texto centralizado que informa alguma coisa antes da caixa de inscrição.<br>
+                É importante deixar paragrafos organizados com identação. Pois deixa o código melhor.
+            </p>
+        </section>
+        <form action="#">
+            <div>
+                <label for="nome">Nome:</label><br>
+                <input id="nome" type="text" name="nome"><br>
+            </div>
+            <div>
+                <label for="email">Email:</label><br>
+                <input id="email" type="email" name="email"><br>
+            </div>
+            <div>
+                <label for="msg">Mensagem:</label><br>
+                <textarea id="msg" name="mensagem" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+        <section>
+            <p>
+                Aqui vem mais um textinho centralizado após o botão enviar<br>
+                Interessante ressaltar que está em duas linhas. É importante deixar organizado.
+            </p>
+        </section>
+        <div><!--Aqui é feita a coisa mais top do site até agora. Foi criado um link para o google maps onde é possível navegar pelo mapa como se estivesse no google maps. Para isso, basta entrar no google maps, escolher o lugar no mapa, clicar nas 3 barrinhas, clicar em share or embed map, clicar na tab embed map e copiar o link html. Simplismente incrível-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15098.505015874558!2d-48.263167086462396!3d-18.903654686010128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbr!4v1590543912919!5m2!1sen!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </main>
+    <footer class="rodape"><!--Inicio do rodapé-->
+        <div class="rodape__linha-1">
+            <div class="rodape__coluna">
+                <a href="index.html" class="logo logo--branco">Design Olímpico</a>
+                <p>Texto explicativo sobre assuntos relacionados a empresa em questão que tem com nome 'olímpico'. Coisa que não faz sentido nenhum mas que está começando a assustar pelo fato de ter grande potencial para se tornar realidade</p>
+            </div>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Social</h2>
+                <ul class="rodape__lista-links"><!--Aqui estão os links para redes sociais-->
+                    <li><a class="rodape__lista-links__item" href="https://twitter.com/olimpiojr26" target="_blank">Twitter</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://www.facebook.com/junior.barbosa.9235" target="_blank">Facebook</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://github.com/olimpiojunior" target="_blank">Github</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://intagram.com/olimpiojr26" target="_blank">Instagram</a></li>
+                    <li><a class="rodape__lista-links__item" href="https://linkedin.com/in/olimpiojunior" target="_blank">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="rodape__coluna">
+                <h2 class="rodape__titulo">Links</h2>
+                <ul class="rodape__lista-links">
+                    <li><a class="rodape__lista-links__item" href="index.html">Home</a></li>
+                    <li><a class="rodape__lista-links__item" href="sobre.html">Sobre nós</a></li>
+                    <li><a class="rodape__lista-links__item" href="portifolio.html">Portifólio</a></li>
+                    <li><a class="rodape__lista-links__item" href="contato.html">Contato</a></li>
+                </ul>
+                <p></p>
+            </div>
+        </div>
+        <div class="rodape__linha-2">
+            © 2020 - Todos os direitos reservados - Olímpio Júnior 
+        </div>
+    </footer><!--Fim do rodapé-->
+</body>
+</html>

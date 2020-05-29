@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+/*Garantindo que as imagens não ultrapassem os conteiners delas e que não serão
+redimencionadas deproporcionalmente*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Chamando uma fonte*/
+@font-face{
+    font-family:"Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+/*setando a fonte do site*/
+@font-face{
+    font-family:"Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+body{
+    font-family: "Source Sans Pro";
+}
+.cabecalho{
+    background: white;
+    padding: 15px;
+}
+.logo{
+    background-image: url('../img/logotipo-preto.png');
+    background-repeat: no-repeat;
+    display: block;
+    width: 120px;
+    height: 53px;
+    text-indent: -9999px;
+    margin: 0;
+}
+.logo--branco{
+    background-image: url('../img/logotipo-branco.png');
+}
+.menu-principal__btn{
+    background-image: url('../img/menuprincipal-btn-bg.png');
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    border-color: #c4c4c4;
+    border-style: solid;
+    border-radius: 5px;
+    text-indent: -9999px;
+    cursor: pointer;
+    /*Alterando a posição do botão*/
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+/*Criando um modificador do botão*/
+.menu-principal__btn--fechar{
+    background-position: -48px 7px;
+}
+/*Stylezando a lista*/
+/*tirando os pontos da lista*/
+.menu-principal__lista{
+    padding: 0px;
+    list-style: none;
+}
+/*Retirando o sublinhado dos links da lista*/
+.menu-principal__item{
+    text-decoration-line: none;
+    font-weight: bold;
+    color: #343434;
+    margin-bottom: 10px;
+    display: block;
+    font-size: 18px;
+}
+/*Mudando a cor quando o mouse estiver em cima*/
+.menu-principal__item--atual{
+    color: #f44242;
+}
+/*Rodapé*/
+.rodape{
+    color: #fff;
+}
+.rodape__linha-1{
+    background-color: #272525;
+    background-image: url(../img/rodape-bg-md.jpg);
+    background-size: cover;
+    padding: 15px;
+}
+.rodape__linha-2{
+    background-color: #000000;
+    padding: 15px;
+    text-align: center;
+}
+/*Títulos rodapé*/
+.rodape__titulo{
+    border-bottom: 1px solid #fff;
+    padding: 0 10px 10px 10px;
+    font-size: 18px;
+}
+/*Editando os links do rodapé*/
+.rodape__coluna{
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+/*Separando a logo do paragrafo*/
+.rodape .logo{
+    margin-bottom: 20;
+}
+.rodape__lista-links{
+    padding: 0px;
+    list-style: none;
+}
+.rodape__lista-links__item{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: block;
+}
+/*Adicionando simbolos nos links ()*/
+.rodape__lista-links__item::before{
+    content: '>';
+    margin-right: 8px;
+    color: #f44242;
+}
