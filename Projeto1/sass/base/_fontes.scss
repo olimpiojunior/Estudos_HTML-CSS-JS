@@ -1,0 +1,18 @@
+/*Chamando uma fonte*/
+@font-face{
+    font-family:"Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-Regular.otf');
+}
+/*setando a fonte do site*/
+@font-face{
+    font-family:"Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-Bold.otf');
+    font-weight: bold;
+}
+/*setando a fonte do site*/
+@font-face{
+    font-family:"Source Sans Pro";
+    src: url('../fonts/source-sans-pro/SourceSansPro-BoldIt.otf');
+    font-weight: bold;
+    font-style: italic;
+}

@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+}
+/*Garantindo que as imagens não ultrapassem os conteiners delas e que não serão
+redimencionadas deproporcionalmente*/
+img{
+    max-width: 100%;
+    height: auto;
+}
+body{
+    font-family: "Source Sans Pro";
+}
