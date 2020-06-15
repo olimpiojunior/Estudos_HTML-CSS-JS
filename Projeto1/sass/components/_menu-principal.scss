@@ -1,30 +1,29 @@
 .menu-principal{
     &__btn{
-        background-image: url('../img/menuprincipal-btn-bg.png');
-        background-color: #fff;
-        background-repeat: no-repeat;
-        background-position: -48px 7px;
         display: block;
         width: 50px;
         height: 50px;
-        margin: 0px;
+        text-indent: -9999px;
+        background-color: #fff;
+        background-image: url('../img/menuprincipal-btn-bg.png');
+        background-repeat: no-repeat;
+        background-position: -48px 7px;
         border-color: #c4c4c4;
         border-style: solid;
         border-radius: 5px;
-        text-indent: -9999px;
         cursor: pointer;
         /*Alterando a posição do botão*/
-        //A função position tem 4 valores possíveis; absolute, relative, fixed e static
+        /*A função position tem 4 valores possíveis; absolute, relative, fixed e static*/
         position: absolute;
         top: 15px;
         right: 15px;
-        //Sumindo com o botão quando chegar a 720px
+        margin: 0;
+        /*Sumindo com o botão quando chegar a 720px*/
         @media(min-width: $breakpoint-md){
             display: none;
         }
     }
-    /*Stylezando a lista*/
-    /*tirando os pontos da lista*/
+    /*Stylezando a lista. Tirando os pontos da lista*/
     &__lista{
         padding: 0px;
         list-style: none;
@@ -47,12 +46,12 @@
         height: 20px;
         transition: all 200ms ease-out;
     }
-        /*Mudando a cor quando o mouse estiver em cima*/
+    /*Mudando a cor quando o mouse estiver em cima*/
     &__item--atual{
         color: $cor-principal;
     }
     /*Criando um modificador do botão*/
-    @media(min-width: $breakpoint-md -1){
+    @media(max-width: $breakpoint-md){
         &--fechado{
             .menu-principal__btn{
                 background-position: 5px 5px;

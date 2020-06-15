@@ -5,6 +5,20 @@
     padding: 40px 15px 40px 15px;
     margin: 100px 0;
     box-shadow: 0px 3px 5px #989898;
+    &__erro{
+        background: #f00;
+        color: #fff;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    &__sucesso{
+        background: #00a91e;
+        color: #fff;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
     &__grupo{
         margin-bottom: 15px;
     }
@@ -28,8 +42,14 @@
         margin: 0 auto;
         font-weight: bold;
     }
+    label.error{
+        border-left: solid 4px #f00;
+        padding-left: 4px;
+        color: $cor-principal;
+        margin-left: 3px;
+    }
     @media(min-width: $breakpoint-md){
-        padding-bottom: 240px;
+        padding-bottom: 295px;
         &__grupo{
             float: left;
             width: 100%;
